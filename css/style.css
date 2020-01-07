@@ -1,0 +1,664 @@
+@font-face {
+  font-family: "Accord Alternate";
+  src: url("../assets/fonts/AccordAltReg/AccordAltRegular.eot") format("embedded-opentype"), url("../assets/fontS/AccordAltReg/AccordAltRegular.woff2") format("woff2"), url("../assets/fonts/AccordAltReg/AccordAltReg.woff") format("woff"), url("../assets/fonts/AccordAltReg/AccordAltReg.otf") format("opentype"), url("../assets/fonts/AccordAltReg/AccordAltReg.svg") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Accord Alternate Bold";
+  src: url("../assets/fonts/AccordAltBold/AccordAltBold.eot") format("embedded-opentype"), url("../assets/fonts/AccordAltBold/AccordAltBold.woff2") format("woff2"), url("../assets/fonts/AccordAltBold/AccordAltBold.woff") format("woff"), url("../assets/fonts/AccordAltBold/AccordAltBold.otf") format("opentype"), url("../assets/fonts/AccordAltBold/AccordAltBold.svg") format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Accord Alternate Extra Bold";
+  src: url("../assets/fonts/AccordAltExtraBold/AccordAltExtraBold.eot") format("embedded-opentype"), url("../assets/fonts/AccordAltExtraBold/AccordAltExtraBold.woff2") format("woff2"), url("../assets/fonts/AccordAltExtraBold/AccordAltExtraBold.woff") format("woff"), url("../assets/fonts/AccordAltExtraBold/AccordAltExtraBold.otf") format("opentype"), url("../assets/fonts/AccordAltExtraBold/AccordAltExtraBold.svg") format("svg");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Accord Alternate Medium";
+  src: url("../assets/fonts/AccordAltMedium/AccordAltMedium.eot") format("embedded-opentype"), url("../assets/fonts/AccordAltMedium/AccordAltMedium.woff2") format("woff2"), url("../assets/fonts/AccordAltMedium/AccordAltMedium.woff") format("woff"), url("../assets/fonts/AccordAltMedium/AccordAltMedium.otf") format("opentype"), url("../assets/fonts/AccordAltMedium/AccordAltMedium.svg") format("svg");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Accord Alternate Thin";
+  src: url("../assets/fonts/AccordAltThin/AccordAltThin.eot") format("embedded-opentype"), url("../assets/fonts/AccordAltThin/AccordAltThin.woff2") format("woff2"), url("../assets/fonts/AccordAltThin/AccordAltThin.woff") format("woff"), url("../assets/fonts/AccordAltThin/AccordAltThin.otf") format("opentype"), url("../assets/fonts/AccordAltThin/AccordAltThin.svg") format("svg");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Futura Condensed";
+  src: url("../assets/fonts/FuturaCondensedExtraBold/FuturaCondXBold.eot") format("embedded-opentype"), url("../assets/fonts/FuturaCondensedExtraBold/FuturaCondXBold.woff2") format("woff2"), url("../assets/fonts/FuturaCondensedExtraBold/FuturaCondXBold.woff") format("woff"), url("../assets/fonts/FuturaCondensedExtraBold/FuturaCondensedExtraBold.ttf") format("truetype"), url("../assets/fonts/FuturaCondensedExtraBold/FuturaCondXBold.svg") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+body {
+  color: #000;
+  font-family: "Accord Alternate", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Futura Condensed", Arial, sans-serif;
+  line-height: 1.125;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.375em;
+  margin: 0 auto;
+  max-width: 8em;
+  padding: 0.25em 0;
+}
+
+h2 {
+  color: #fff;
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.25em;
+  padding: 0.125em 0;
+}
+
+h4 {
+  font-size: 2.125em;
+}
+
+h5 {
+  font-size: 1.875em;
+  margin-bottom: 1.5em;
+  padding-top: 0.5em;
+}
+
+h6 {
+  font-family: "Accord Alternate Bold", Arial, sans-serif;
+  margin-bottom: 0.25em;
+}
+
+p {
+  line-height: 1.125;
+}
+p.lead-text {
+  font-size: 1.375em;
+}
+
+.smaller {
+  font-size: 0.75em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text--red {
+  color: #c81932;
+}
+
+.text--med {
+  font-family: "Accord Alternate Medium", Arial, sans-serif;
+}
+
+.text--bold {
+  font-family: "Accord Alternate Bold", Arial, sans-serif;
+}
+
+.text--extra-bold {
+  font-family: "Accord Alternate Extra Bold", Arial, sans-serif;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.site {
+  min-width: 275px;
+}
+
+.text-container {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0 4%;
+  position: relative;
+}
+
+.button-container {
+  padding: 1.875em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Futura Condensed", Arial, sans-serif;
+  font-size: 2em;
+  line-height: 1;
+  padding: 0.125em 0 0.125em 0.25em;
+  position: relative;
+  text-transform: uppercase;
+}
+.button--red {
+  background-color: #c81932;
+  border-color: #c81932;
+  color: #fff;
+}
+.button--red::before {
+  border-left: 0.5em solid #c81932;
+}
+.button--red::after {
+  border-top: 0.5em solid #c81932;
+}
+.button--white {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+.button--white::before {
+  border-left: 0.5em solid #fff;
+}
+.button--white::after {
+  border-top: 0.5em solid #fff;
+}
+.button::before {
+  content: " ";
+  height: 0.75em;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+.button::after {
+  content: " ";
+  border-right: 0.5em solid transparent;
+  bottom: 0;
+  height: 0;
+  left: 100%;
+  position: absolute;
+  width: 0;
+}
+
+ul li {
+  line-height: 1.125;
+  margin-bottom: 0.25em;
+}
+ul.iconed li {
+  font-family: "Accord Alternate Bold", Arial, sans-serif;
+  font-size: 1.75em;
+}
+ul.iconed img, ul.iconed span {
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.iconed img {
+  margin-right: 0.25em;
+  padding: 3px 0;
+  width: 1em;
+}
+ul.non-bulleted li {
+  font-size: 1.125em;
+}
+
+.bg--red {
+  background-color: #c81932;
+  color: #fff;
+}
+
+.bg--black {
+  background-color: #000;
+  color: #fff;
+}
+
+@-webkit-keyframes fadeInMen {
+  0% {
+    opacity: 0.45;
+    -webkit-transform: scale(0.75, 0.75);
+    -moz-transform: scale(0.75, 0.75);
+    -ms-transform: scale(0.75, 0.75);
+    -o-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75);
+  }
+  35% {
+    opacity: 0.75;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes fadeInMen {
+  0% {
+    opacity: 0.45;
+    -webkit-transform: scale(0.75, 0.75);
+    -moz-transform: scale(0.75, 0.75);
+    -ms-transform: scale(0.75, 0.75);
+    -o-transform: scale(0.75, 0.75);
+    transform: scale(0.75, 0.75);
+  }
+  35% {
+    opacity: 0.75;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes fadeInWomen {
+  0% {
+    opacity: 0.35;
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  35% {
+    opacity: 0.35;
+  }
+  70% {
+    opacity: 675;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes fadeInWomen {
+  0% {
+    opacity: 0.35;
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -o-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  35% {
+    opacity: 0.35;
+  }
+  70% {
+    opacity: 0.675;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes cssGif {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+header {
+  background-color: #dfdfdf;
+}
+header .header-hero {
+  overflow: hidden;
+  position: relative;
+}
+header .header-hero .background-image {
+  bottom: 0;
+  height: 100%;
+  max-width: none;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  -webkit-transform: translate(50%, 0);
+  -moz-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  -o-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+  z-index: 0;
+}
+header .text-container {
+  max-width: 1075px;
+  text-align: center;
+}
+header .logo-container {
+  padding: 6% 0 12%;
+}
+header .logo-container .logo {
+  max-width: 60%;
+}
+header .product-tease-container {
+  padding: 20% 0 15%;
+}
+header .trail-hydro-logo {
+  max-width: 75%;
+}
+header .trail-hydro-shoes {
+  position: relative;
+}
+header .trail-hydro-shoes .women {
+  animation-name: fadeInWomen;
+  animation-duration: 5s;
+  animation-delay: -0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .trail-hydro-shoes .men {
+  animation-name: fadeInMen;
+  animation-duration: 4.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+header .button-container {
+  padding: 10% 0 15%;
+}
+
+.main-hero-1-container .image-container {
+  position: relative;
+}
+.main-hero-1-container h2 {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.product-info-container .ul-container {
+  margin: 0 auto;
+  max-width: 25.5em;
+}
+.product-info-container .gif-container {
+  background-color: gray;
+  position: relative;
+}
+.product-info-container .trail-hydro-shoe.woman {
+  background-color: #fff;
+}
+.product-info-container .trail-hydro-shoe.man {
+  animation-name: cssGif;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: 0;
+}
+
+.main-hero-3-container .bg--grey {
+  background-color: #2b2b2b;
+  border-radius: 1em;
+  margin: 3em auto 0;
+  max-width: 16.5em;
+  padding: 2.5em 0.75em 0.5em;
+  position: relative;
+}
+.main-hero-3-container .button-container {
+  bottom: 90%;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+.main-hero-3-container > .image-container {
+  height: 75vw;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.main-hero-3-container > .image-container img {
+  bottom: 0;
+  height: 100%;
+  max-width: none;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  -webkit-transform: translate(50%, 0);
+  -moz-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  -o-transform: translate(50%, 0);
+  transform: translate(50%, 0);
+}
+
+.full-features-container {
+  text-align: center;
+}
+.full-features-container .feature-box {
+  display: inline-block;
+  margin-bottom: 2.75em;
+  vertical-align: top;
+  width: 50%;
+}
+.full-features-container .feature-box:nth-child(odd) {
+  padding-right: 0.5em;
+}
+.full-features-container .feature-box:nth-child(even) {
+  padding-left: 0.5em;
+}
+.full-features-container .feature-box__inner {
+  box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.5), 0px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  max-width: 192px;
+  padding: 0 0.875em 0.875em;
+}
+.full-features-container .feature-img {
+  padding: 0 0.375em 0.375em;
+}
+.full-features-container .condensed {
+  overflow: hidden;
+}
+.full-features-container h6, .full-features-container p, .full-features-container .read-more {
+  font-size: 0.875em;
+}
+.full-features-container .read-more {
+  cursor: pointer;
+  display: inline-block;
+  padding-top: 0.25em;
+}
+
+footer .button-container {
+  padding: 0.5em 0 2em;
+}
+
+@media screen and (min-width: 510px) {
+  h1 {
+    font-size: 2.625em;
+    max-width: none;
+  }
+
+  h2 {
+    font-size: 2.875em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  h4 {
+    font-size: 2.25em;
+  }
+
+  h5 {
+    font-size: 2.125em;
+  }
+
+  .button {
+    font-size: 2.25em;
+  }
+
+  ul.iconed li {
+    font-size: 2em;
+  }
+  ul.iconed img {
+    margin-right: 0.4375em;
+  }
+  ul.non-bulleted li {
+    font-size: 1.25em;
+  }
+
+  header .logo-container {
+    padding: 28px 0 56px;
+  }
+  header .button-container {
+    padding-bottom: 75px;
+  }
+
+  .product-info-container .ul-container {
+    max-width: 28.75em;
+  }
+
+  .main-hero-3-container .bg--grey {
+    max-width: 20em;
+    padding: 3em 1em 0.75em;
+  }
+
+  .full-features-container .feature-box {
+    padding: 0;
+    width: 33.33%;
+  }
+  .full-features-container .feature-box:nth-child(odd) {
+    padding-left: 0.375em;
+    padding-right: 0.375em;
+  }
+  .full-features-container .feature-box:nth-child(even) {
+    padding-left: 0.375em;
+    padding-right: 0.375em;
+  }
+}
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+  }
+
+  h3 {
+    font-size: 2.875em;
+  }
+
+  h5 {
+    font-size: 2.375em;
+  }
+
+  .button {
+    font-size: 2.625em;
+  }
+
+  ul.iconed li {
+    font-size: 2.375em;
+  }
+
+  .product-info-container .ul-container {
+    max-width: 30em;
+  }
+
+  .main-hero-3-container .bg--grey {
+    max-width: 23em;
+    padding: 3.5em 1.25em 1em;
+  }
+  .main-hero-3-container > .image-container {
+    height: 550px;
+  }
+
+  .full-features-container .feature-box {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 890px) {
+  header .product-tease-container {
+    padding: 125px 0;
+  }
+}
+@media screen and (min-width: 1285px) {
+  .main-hero-3-container > .image-container {
+    height: auto;
+  }
+  .main-hero-3-container > .image-container img {
+    bottom: auto;
+    height: auto;
+    position: relative;
+    right: auto;
+    top: auto;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

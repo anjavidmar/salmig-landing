@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Futura Condensed Extra';
+    src: url('FuturaCondXBoold.eot');
+    src: url('FuturaCondXBoold.eot?#iefix') format('embedded-opentype'),
+        url('FuturaCondXBoold.woff2') format('woff2'),
+        url('FuturaCondXBoold.woff') format('woff'),
+        url('FuturaCondXBoold.svg#FuturaCondXBoold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAltMedium';
+    src: url('AccordAltMedium.eot');
+    src: url('AccordAltMedium.eot?#iefix') format('embedded-opentype'),
+        url('AccordAltMedium.woff2') format('woff2'),
+        url('AccordAltMedium.woff') format('woff'),
+        url('AccordAltMedium.svg#AccordAltMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAltThin';
+    src: url('AccordAltThin.eot');
+    src: url('AccordAltThin.eot?#iefix') format('embedded-opentype'),
+        url('AccordAltThin.woff2') format('woff2'),
+        url('AccordAltThin.woff') format('woff'),
+        url('AccordAltThin.svg#AccordAltThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAltExtraBold';
+    src: url('AccordAltExtraBold.eot');
+    src: url('AccordAltExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('AccordAltExtraBold.woff2') format('woff2'),
+        url('AccordAltExtraBold.woff') format('woff'),
+        url('AccordAltExtraBold.svg#AccordAltExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAltRegular';
+    src: url('AccordAltRegular.eot');
+    src: url('AccordAltRegular.eot?#iefix') format('embedded-opentype'),
+        url('AccordAltRegular.woff2') format('woff2'),
+        url('AccordAltRegular.woff') format('woff'),
+        url('AccordAltRegular.svg#AccordAltRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AccordAltBold';
+    src: url('AccordAltBold.eot');
+    src: url('AccordAltBold.eot?#iefix') format('embedded-opentype'),
+        url('AccordAltBold.woff2') format('woff2'),
+        url('AccordAltBold.woff') format('woff'),
+        url('AccordAltBold.svg#AccordAltBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
