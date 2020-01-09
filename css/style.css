@@ -76,6 +76,7 @@ h3 {
 
 h4 {
   font-size: 2.125em;
+  margin-bottom: 0.325em;
 }
 
 h5 {
@@ -94,6 +95,14 @@ p {
 }
 p.lead-text {
   font-size: 1.375em;
+}
+p.feature-description {
+  font-size: 1.1875em;
+  margin-bottom: 0.5em;
+}
+
+.larger {
+  font-size: 1.25;
 }
 
 .smaller {
@@ -214,8 +223,16 @@ ul.iconed img {
   padding: 3px 0;
   width: 1em;
 }
+ul.non-bulleted {
+  padding-right: 1em;
+}
 ul.non-bulleted li {
   font-size: 1.125em;
+}
+
+.bg--black {
+  background-color: #000;
+  color: #fff;
 }
 
 .bg--red {
@@ -223,9 +240,9 @@ ul.non-bulleted li {
   color: #fff;
 }
 
-.bg--black {
-  background-color: #000;
-  color: #fff;
+.bg--white {
+  background-color: #fff;
+  color: #000;
 }
 
 @-webkit-keyframes fadeInMen {
@@ -324,6 +341,38 @@ ul.non-bulleted li {
     transform: scale(1, 1);
   }
 }
+@-webkit-keyframes cssGif {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes cssGif {
   0% {
     opacity: 0;
@@ -397,6 +446,21 @@ header .trail-hydro-shoes {
   position: relative;
 }
 header .trail-hydro-shoes .women {
+  -moz-animation-name: fadeInWomen;
+  -moz-animation-duration: 5s;
+  -moz-animation-delay: -0.5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-fill-mode: both;
+  -o-animation-name: fadeInWomen;
+  -o-animation-duration: 5s;
+  -o-animation-delay: -0.5s;
+  -o-animation-timing-function: linear;
+  -o-animation-fill-mode: both;
+  -webkit-animation-name: fadeInWomen;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-delay: -0.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
   animation-name: fadeInWomen;
   animation-duration: 5s;
   animation-delay: -0.5s;
@@ -407,6 +471,21 @@ header .trail-hydro-shoes .women {
   top: 0;
 }
 header .trail-hydro-shoes .men {
+  -moz-animation-name: fadeInMen;
+  -moz-animation-duration: 4.5s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-fill-mode: both;
+  -o-animation-name: fadeInMen;
+  -o-animation-duration: 4.5s;
+  -o-animation-delay: 0.5s;
+  -o-animation-timing-function: ease-in;
+  -o-animation-fill-mode: both;
+  -webkit-animation-name: fadeInMen;
+  -webkit-animation-duration: 4.5s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
   animation-name: fadeInMen;
   animation-duration: 4.5s;
   animation-delay: 0.5s;
@@ -423,31 +502,54 @@ header .button-container {
 .main-hero-1-container .image-container {
   position: relative;
 }
+.main-hero-1-container .desktop {
+  display: none;
+}
 .main-hero-1-container h2 {
   left: 0;
   position: absolute;
   right: 0;
+  text-shadow: 0 0 5px #000;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -75%);
+  -moz-transform: translate(0, -75%);
+  -ms-transform: translate(0, -75%);
+  -o-transform: translate(0, -75%);
+  transform: translate(0, -75%);
   width: 100%;
 }
+.main-hero-1-container .button-container {
+  bottom: 0;
+  left: 0;
+  padding-bottom: 0;
+  position: absolute;
+  right: 0;
+}
 
-.product-info-container .ul-container {
+.product-info-container .text-container {
+  max-width: 720px;
+}
+.product-info-container .iconed-ul-container {
   margin: 0 auto;
-  max-width: 25.5em;
+  max-width: 21.625em;
+  padding: 2.875em 0;
 }
 .product-info-container .gif-container {
-  background-color: gray;
   position: relative;
 }
-.product-info-container .trail-hydro-shoe.woman {
-  background-color: #fff;
-}
 .product-info-container .trail-hydro-shoe.man {
+  -moz-animation-name: cssGif;
+  -moz-animation-duration: 20s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: cssGif;
+  -o-animation-duration: 20s;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: infinite;
+  -webkit-animation-name: cssGif;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
   animation-name: cssGif;
   animation-duration: 20s;
   animation-timing-function: linear;
@@ -456,6 +558,61 @@ header .button-container {
   top: 0;
 }
 
+.main-hero-2-container .desktop {
+  display: none;
+}
+.main-hero-2-container p.lead-text {
+  -webkit-transform: translate(0, -2.5rem);
+  -moz-transform: translate(0, -2.5rem);
+  -ms-transform: translate(0, -2.5rem);
+  -o-transform: translate(0, -2.5rem);
+  transform: translate(0, -2.5rem);
+}
+.main-hero-2-container .divider {
+  bottom: 0;
+  left: 0;
+  padding-bottom: 1.25em;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+.main-hero-2-container .divider .line {
+  height: 3px;
+  width: 100%;
+}
+
+.features-container .feature-container {
+  margin: 0 auto 1.5em;
+  max-width: 495px;
+  text-align: left;
+}
+.features-container .feature-container:first-child .feature-container__inner .divider {
+  padding: 0 0 1.25em;
+}
+.features-container .feature-container:last-child {
+  margin-bottom: 0;
+}
+.features-container .feature-container__inner .divider {
+  padding: 1.25em 0 0;
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+.features-container .feature-container__inner .line {
+  display: block;
+  height: 3px;
+  width: 100%;
+}
+.features-container .feature-container__inner.padded {
+  padding: 0 1em;
+}
+
+.main-hero-3-container .spaceholder-container {
+  margin: 0 auto;
+  max-width: 495px;
+}
 .main-hero-3-container .bg--grey {
   background-color: #2b2b2b;
   border-radius: 1em;
@@ -574,8 +731,16 @@ footer .button-container {
     padding-bottom: 75px;
   }
 
-  .product-info-container .ul-container {
-    max-width: 28.75em;
+  .product-info-container .iconed-ul-container {
+    max-width: 25.325em;
+  }
+
+  .main-hero-2-container .divider {
+    visibility: visible;
+  }
+
+  .features-container .feature-container {
+    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.5), -5px 0 5px -5px rgba(0, 0, 0, 0.5);
   }
 
   .main-hero-3-container .bg--grey {
@@ -621,8 +786,12 @@ footer .button-container {
     font-size: 2.375em;
   }
 
-  .product-info-container .ul-container {
-    max-width: 30em;
+  .main-hero-1-container .button-container {
+    padding-bottom: 1.875em;
+  }
+
+  .product-info-container .iconed-ul-container {
+    max-width: 29.5em;
   }
 
   .main-hero-3-container .bg--grey {
@@ -640,6 +809,13 @@ footer .button-container {
 @media screen and (min-width: 890px) {
   header .product-tease-container {
     padding: 125px 0;
+  }
+
+  .main-hero-1-container .mobile {
+    display: none;
+  }
+  .main-hero-1-container .desktop {
+    display: block;
   }
 }
 @media screen and (min-width: 1285px) {

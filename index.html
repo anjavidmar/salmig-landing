@@ -47,18 +47,19 @@
                 </section>
                 <section class="main-hero-1-container">
                     <div class="image-container">
-                        <img src="./assets/images/main-hero-1.jpg" />
+                        <img class="mobile" src="./assets/images/main-hero-1-mobile.jpg" />
+                        <img class="desktop" src="./assets/images/main-hero-1-desktop.jpg" />
                         <h2><span class="uppercase">run<br /> waterproof</span></h2>
-                    </div>
-                    <div class="button-container">
-                        <a href="#" target="_blank">
-                            <span class="button button--red">buy now</span>
-                        </a>
+                        <div class="button-container">
+                            <a href="#" target="_blank">
+                                <span class="button button--red">buy now</span>
+                            </a>
+                        </div>
                     </div>
                 </section>
                 <section class="product-info-container bg--white">
                     <div class="text-container">
-                        <div class="ul-container">
+                        <div class="iconed-ul-container">
                             <ul class="iconed">
                                 <li>
                                     <img src="./assets/icons/icon.png" alt="checkmark icon" /><span class="uppercase smaller">great grip on mudy, slippery, and dry rocky surfaces</span>
@@ -78,7 +79,7 @@
                             <img class="trail-hydro-shoe woman" src="./assets/images/trail-hydro-women_grapeleaf-black.jpg" alt="trail hydro shoe, men's in grey/black" />
                             <img class="trail-hydro-shoe man" src="./assets/images/trail-hydro-men_grey-black.jpg" alt="trail hydro shoe, women's in grape leaf/black" />
                         </div>
-                        <div class="details-container">
+                        <div class="non-bulleted-ul-container">
                             <ul class="non-bulleted">
                                 <li>
                                     <span class="text--med">Lug:&nbsp;</span>&nbsp;4 mm
@@ -112,7 +113,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="main-hero-2-container">
+                <section class="main-hero-2-container bg--black">
                     <div class="image-container">
                         <img class="mobile" src="./assets/images/main-hero-2-mobile.jpg" />
                         <!-- <img class="desktop" src="./assets/images/img-placeholder.png" /> -->
@@ -121,48 +122,40 @@
                         <p class="lead-text text--med">
                             Powered with <span class="text--bold">HydroGuard</span> and <span class="text--bold">Vibram Megagrip</span>. Anyone who has experienced running in wet conditions will testify to how important having the right equipment is. Investing in a high performance running shoe will improve your experience and keep you dry and comfortable. The all new Trail Hydro from Salming is our first membrane shoe, built on the awward winnig Salming Train 5 platform - here are the key features:
                         </p>
+                        <div class="divider text-container"><div class="line bg--white"></div></div>
                     </div>
                 </section>
                 <section class="features-container bg--white">
-                    <div class="feature-container">
-                        <div class="feature-container__inner text-container">
-                            <h4><span class="uppercase">Hydroguard</span></h4>
-                            <p>A breathable waterproof membrane that guarantees a dry and comfortable environment for your feet.</p>
-                        </div>
-                        <img class="feature-img" src="./assets/images/hydroguard-waterproof.jpg" alt="alt text" />
-                        <div class="feature-container__inner text-container">
-                            <div class="border-bottom"></div>
-                        </div>
-                    </div>
-                    <div class="feature-container">
-                        <div class="feature-container__inner text-container">
-                            <h4><span class="uppercase">Vibram Megagrip</span></h4>
-                            <p>Compound also present on the ISPO Award winning Trail5 and iSpike models, which characteristics are a sticky and very long lasting compound that provides excellent grip on wet, muddy, and slippery surfaces as well as dry rocky surfaces.</p>
-                        </div>
-                        <img class="feature-img" src="./assets/images/vibram-megagrip.jpg" alt="alt text" />
-                        <div class="feature-container__inner text-container">
-                            <div class="border-bottom"></div>
-                        </div>
-                    </div>
-                    <div class="feature-container">
-                        <div class="feature-container__inner text-container">
-                            <h4><span class="uppercase">Recoil midsole + SoftFoam heel insert</span></h4>
-                            <p>Provides a comfortable cushioning and at the same time giving you some extra energy rebound in the toe off phase. In the heel area there’s an offset SoftFoam™ insert providing extra cushioning.</p>
-                        </div>
-                        <img class="feature-img" src="./assets/images/recoil-softfoam.jpg" alt="alt text" />
-                        <div class="feature-container__inner text-container">
-                            <div class="border-bottom"></div>
-                        </div>
-                    </div>
-                    <div class="feature-container">
-                        <div class="feature-container__inner text-container">
-                            <h4><span class="uppercase">RocShield forefoot</span></h4>
-                            <p>The shoe's upper design features a sleek exterior design with a reinforced RocShield™ forefoot area. The quick lace construction does not harbour water nor dirt.</p>
-                        </div>
-                        <!-- <img class="feature-img" src="./assets/images/rocshield-forefoot.png" alt="alt text" /> -->
-                        <img class="feature-img" src="./assets/images/rocshield-spaceholder-top.png" alt="alt text" />
-                        <div class="feature-container__inner text-container">
-                            <div class="border-bottom"></div>
+                    <div id="features-container__inner">
+                        <div class="feature-container">
+                            <div class="feature-container__inner text-container">
+                                <div class="divider"><div class="line bg--white"></div></div>
+                                <h4><span class="uppercase">Hydroguard</span></h4>
+                                <p class="feature-description">A breathable waterproof membrane that guarantees a dry and comfortable environment for your feet.</p>
+                            </div>
+                            <img class="feature-img" src="./assets/images/hydroguard-waterproof.jpg" alt="alt text" />
+                        </div><div class="feature-container">
+                            <div class="feature-container__inner text-container">
+                                <div class="divider"><div class="line bg--black"></div></div>
+                                <h4><span class="uppercase">Vibram Megagrip</span></h4>
+                                <p class="feature-description">Compound also present on the ISPO Award winning Trail5 and iSpike models, which characteristics are a sticky and very long lasting compound that provides excellent grip on wet, muddy, and slippery surfaces as well as dry rocky surfaces.</p>
+                            </div>
+                            <img class="feature-img" src="./assets/images/vibram-megagrip.jpg" alt="alt text" />
+                        </div><div class="feature-container">
+                            <div class="feature-container__inner text-container">
+                                <div class="divider"><div class="line bg--black"></div></div>
+                                <h4><span class="uppercase">Recoil midsole + SoftFoam heel insert</span></h4>
+                                <p class="feature-description">Provides a comfortable cushioning and at the same time giving you some extra energy rebound in the toe off phase. In the heel area there’s an offset SoftFoam™ insert providing extra cushioning.</p>
+                            </div>
+                            <img class="feature-img" src="./assets/images/recoil-softfoam.jpg" alt="alt text" />
+                        </div><div class="feature-container">
+                            <div class="feature-container__inner text-container">
+                                <div class="divider"><div class="line bg--black"></div></div>
+                                <h4><span class="uppercase">RocShield forefoot</span></h4>
+                                <p class="feature-description">The shoe's upper design features a sleek exterior design with a reinforced RocShield™ forefoot area. The quick lace construction does not harbour water nor dirt.</p>
+                            </div>
+                            <!-- <img class="feature-img" src="./assets/images/rocshield-forefoot.png" alt="alt text" /> -->
+                            <img class="feature-img" src="./assets/images/rocshield-spaceholder-top.png" alt="alt text" />
                         </div>
                     </div>
                 </section>
@@ -293,7 +286,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </section>

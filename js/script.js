@@ -12,6 +12,32 @@ var site_w = site.offsetWidth;
 console.log('screen height = ' + h, 'screen width = ' + w);
 console.log('site height = ' + site_h, 'site width = ' + site_w);
 
+var textContainer = document.getElementsByClassName('text-container');
+console.log(textContainer);
+
+var textContainer0_h = textContainer[0].offsetHeight;
+
+var h2 = document.getElementsByTagName('h2');
+console.log(h2);
+
+h2[0].style.fontSize = (textContainer0_h * 0.075) + 'px';
+
+var gifContainer = document.querySelector('.gif-container');
+var bulletedContainer = document.querySelector('.non-bulleted-ul-container');
+var bulletedContainer_w = bulletedContainer.offsetWidth;
+var textContainer2_w = textContainer[2].offsetWidth;
+var gifContainer_w = textContainer2_w - bulletedContainer_w - 30;
+
+console.log(gifContainer, bulletedContainer, bulletedContainer_w, textContainer2_w, gifContainer_w);
+
+// if ( w > 749 ) {
+//     // gifContainer.classList.add()
+//     // gifContainer.style.float = 'right';
+//     gifContainer.style.width = gifContainer_w + 'px';
+// }
+
+
+
 
 // iconed ul sizing
 
@@ -28,6 +54,32 @@ li_span[0].style.width = li_span_w + 'px';
 // for (var i = 0; i < li_span.length; i++) {
 //     li_span[i].style.width = li_span_w + 'px';
 // }
+
+//main features
+
+var featuresContainer = document.getElementById('features-container__inner');
+
+var featureContainer = document.getElementsByClassName('feature-container__inner');
+
+console.log(featuresContainer);
+console.log(featureContainer);
+
+
+if (w > 509) {
+    featuresContainer.classList.add('text-container');
+    for (var i = 0; i < featureContainer.length; i++) {
+        featureContainer[i].classList.add('padded');
+        featureContainer[i].classList.remove('text-container');
+    }
+} else {
+    featuresContainer.classList.remove('text-container');
+    for (var i = 0; i < featureContainer.length; i++) {
+        featureContainer[i].classList.add('text-container');
+        featureContainer[i].classList.remove('padded');
+    }
+}
+
+//bottom features
 
 // var condensedHeight = document.getElementById('condensed-height');
 // var condensedHeight_h = condensedHeight.offsetHeight;
@@ -86,6 +138,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         console.log('site height = ' + site_h, 'site width = ' + site_w);
 
+        textContainer_h = textContainer[0].offsetHeight;
+        h2[0].style.fontSize = (textContainer_h * 0.075) + 'px';
+
         ul_iconed_w =  ul_iconed.offsetWidth;
         li_img_w =  li_img.offsetWidth;
         li_span_w = ul_iconed_w - (li_img_w * 1.75)
@@ -95,6 +150,20 @@ document.addEventListener("DOMContentLoaded", function() {
         // for (var i = 0; i < li_span.length; i++) {
         //     li_span[i].style.width = li_span_w + 'px';
         // }
+
+        if (w > 510) {
+            featuresContainer.classList.add('text-container');
+            for (var i = 0; i < featureContainer.length; i++) {
+                featureContainer[i].classList.add('padded');
+                featureContainer[i].classList.remove('text-container');
+            }
+        } else {
+            featuresContainer.classList.remove('text-container');
+            for (var i = 0; i < featureContainer.length; i++) {
+                featureContainer[i].classList.add('text-container');
+                featureContainer[i].classList.remove('padded');
+            }
+        }
 
         // var condensedHeight = document.getElementById('condensed-height');
         condensedHeight_h = condensedHeight.offsetHeight;
