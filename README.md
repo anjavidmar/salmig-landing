@@ -2,4 +2,4 @@
 
 **BRAND NEW TrailHYDRO trainers by SALMING**
 
-https://anjavidmar.github.io/trailHYDRO-landing/
+https://anjavidmar.github.io/salmig-landing/
