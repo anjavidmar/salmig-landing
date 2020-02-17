@@ -1,5 +1,5 @@
-# Salming - TrailHYDRO Landing Page
+# Salming - Spring/Summer Landing Page
 
-**BRAND NEW TrailHYDRO trainers by SALMING**
+**BRAND NEW Spring/Summer trainers collection by SALMING**
 
-https://anjavidmar.github.io/trailHYDRO-landing/
+https://anjavidmar.github.io/salmig-landing/
