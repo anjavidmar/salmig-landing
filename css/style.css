@@ -142,6 +142,7 @@ p.lead-text {
   display: inline-block;
   font-family: "Accord Alternate Medium", Arial, sans-serif;
   font-size: 1.25em;
+  line-height: 1;
   padding: 0.375em 0.875rem;
 }
 
