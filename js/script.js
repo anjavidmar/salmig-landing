@@ -26,10 +26,21 @@ function checkScreenWidth() {
 function changeColour(x) {
     var h4 = document.querySelector('h4.capitalize');
     var h1 = document.querySelector('h1.uppercase');
-   
+    var button = document.getElementsByClassName('colour-button')[1];
+    console.log(button);
+    
+
     h4.classList.toggle("white");
     h1.classList.toggle("white");
     x.classList.toggle("peach");
+    button.classList.toggle("peach");
+}
+
+function changeWeight(w) {
+    var h4 = document.querySelector('h4.capitalize');
+
+    h4.classList.toggle("thin");
+    w.classList.toggle("thick");
 }
 
 document.addEventListener("DOMContentLoaded", function() {
