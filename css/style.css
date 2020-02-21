@@ -48,6 +48,7 @@ img {
 body {
   color: #000000;
   font-family: "Accord Alternate", Arial, sans-serif;
+  line-height: 1.15;
 }
 
 h1, h2, h3 {
@@ -93,6 +94,7 @@ p {
 }
 p.lead-text {
   font-size: 1.25em;
+  line-height: 1.25;
   margin-bottom: 0;
   padding: 0.75em 0;
 }
@@ -111,6 +113,10 @@ p.lead-text {
 
 .align-center, .banner {
   text-align: center;
+}
+
+.text--black {
+  color: #000000;
 }
 
 .site {
@@ -141,6 +147,9 @@ p.lead-text {
 
 ul {
   font-family: "Accord Alternate Medium", Arial, sans-serif;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin-left: 1.25em;
   margin-bottom: 1.25em;
 }
 ul li {
@@ -234,7 +243,7 @@ section {
   margin-bottom: 1.25em;
 }
 
-.shoe-showcase.greyhound h2 {
+.shoe-showcase.greyhound h2, .shoe-showcase.greyhound ul {
   color: #087ba1;
 }
 .shoe-showcase.greyhound .button {
@@ -243,19 +252,19 @@ section {
 .shoe-showcase.enroute {
   background-color: #f4f4f4;
 }
-.shoe-showcase.enroute h2 {
+.shoe-showcase.enroute h2, .shoe-showcase.enroute ul {
   color: #dd423d;
 }
 .shoe-showcase.enroute .button {
   background-color: #dd423d;
 }
-.shoe-showcase.speed h2 {
+.shoe-showcase.speed h2, .shoe-showcase.speed ul {
   color: #17b4d1;
 }
 .shoe-showcase.speed .button {
   background-color: #17b4d1;
 }
-.shoe-showcase.elements h2 {
+.shoe-showcase.elements h2, .shoe-showcase.elements ul {
   color: #f87e59;
 }
 .shoe-showcase.elements .button {
@@ -264,7 +273,7 @@ section {
 .shoe-showcase.trail {
   background-color: #f4f4f4;
 }
-.shoe-showcase.trail h2 {
+.shoe-showcase.trail h2, .shoe-showcase.trail ul {
   color: #52cade;
 }
 .shoe-showcase.trail .button {
@@ -524,6 +533,10 @@ footer .logo {
   }
 }
 @media screen and (min-width: 665px) {
+  p.lead-text {
+    font-size: 1.375em;
+  }
+
   .banner--trail .image-container {
     display: inline-block;
     text-align: center;
